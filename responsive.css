@@ -1,0 +1,113 @@
+@media screen and (max-width:480px){
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+    .nav-menu{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        background: rgba( 255, 255, 255, 0.6 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 1px );
+        -webkit-backdrop-filter: blur( 1px );
+        width: 180px;
+        transition: 0.3s;
+        height: 90vh;
+        border-radius: 30px;
+        justify-content: center;
+        align-items: center;
+        z-index: 40;
+        transition: left 2 s;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        -webkit-backdrop-filter: blur(50%);
+    }
+
+    .nav-menu li{
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .nav-menu .active{
+        left: 1%;
+    }
+    .hamburger.active .bar:nth-child(2) {opacity: 0;}
+.hamburger.active .bar:nth-child(1) {transform: translateY(8px) rotate(45deg);}
+.hamburger.active .bar:nth-child(3) {transform: translateY(-8px) rotate(-45deg);
+}
+
+#logo2{
+    margin-top: 10px;
+}
+
+#section1{
+    height: auto;
+    padding: 88px 0;
+}
+
+#bgimg2{
+   display: none;
+}
+
+
+.mainDiv1{
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+.MDone,.MDtwo{
+    width: 100%;
+}
+.MDone{
+order: 2;
+}
+.MDtwo{
+order: 1;
+}
+#mainDiv2{
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+
+}
+#mainDiv2 div h1{
+    width: 100%;
+}
+#mainDiv2 h1{
+    text-align: center;
+    font-size: 50px;
+}
+.mainwindow{
+    padding: 15px;
+}
+
+#mainDiv3{
+flex-direction: column;
+width: 90%;
+justify-content: center;
+align-items: center;
+
+}
+
+#section3 div h1{
+    width: 100%;
+    margin: auto 0;
+}
+#section3 .heading{
+font-size: 50px;
+}
+#skills, #SkillLogo{
+    width: 100%;
+}
+#SkillLogo img{
+max-width: 150px;
+}
+
+}
+
